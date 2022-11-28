@@ -1,0 +1,35 @@
+.navbar-img{
+    border-radius: 20px;
+    vertical-align: middle;
+    width: 40px;
+    aspect-ratio: auto 32/32;
+    height: 40px;
+    margin-right: 15px;
+}
+.cont{    
+        display: flex;
+        flex-direction:row ;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        text-align: center;
+        
+    
+}
+.try{
+    display: flex;
+        flex-direction:row ;
+        
+
+}
+
+.nav-link.active,
+  .show > .nav-link {
+    background-color: #ff6d6d;
+    border-radius: 15px;
+    
+}
+.nav-link{
+    color: #ff6d6d;
+}
