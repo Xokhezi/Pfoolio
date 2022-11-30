@@ -1,5 +1,7 @@
-<div class="center back">
-       <div *ngFor="let project of projects" class="card card-sizing" >
+<div @fadeInStagger class="center back">
+    <h1>My Projects</h1>
+    <small>Please note, that these are pre-released project with MockBackEnds/HardCoded services etc.</small>
+       <div  *ngFor="let project of projects" class="card card-sizing" >
             <img src={{project.img}} class="card-img-top pr-img " alt="...">
             <div class="card-body">
                 <h5 class="card-title">{{project.name}}</h5>

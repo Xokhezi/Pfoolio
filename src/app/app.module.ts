@@ -10,6 +10,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { MeComponent } from './me/me.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SkillsComponent } from './skills/skills.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 
@@ -20,17 +21,19 @@ import { SkillsComponent } from './skills/skills.component';
     NavbarComponent,
     MeComponent,
     SkillsComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
+    AppRoutingModule,    
     BrowserAnimationsModule,    
     RouterModule.forRoot([
       {path:'', component:HomeComponent},
       {path:'me', component:MeComponent},
       {path:'projects', component:ProjectsComponent},
       {path:'skills', component:SkillsComponent},
+      {path:'contact', component:ContactComponent},
       {path:'**',component:NotFoundComponent}      
     ]),
   ],
