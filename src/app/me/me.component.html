@@ -1,10 +1,54 @@
 <div class="center back">
-    <div class="grid">
+    <div @slideMe *ngIf="!switch" class="grid">
         <div class="card text-card ">
             <h3 class=""> My Story...</h3>
             <hr>
-            <p class="text-break"> I am person with passion in creating a developing new things. I love learnign of new things. Coding is my hobby . I started in 2021 with C# courses on net, but i really quickly fell totally into it. After few months with C# I started with course MVC .NET where I touched FrontEnd Framework Agular, Javascript/Typescript. Today I am building small Apps for users with responsive Front-End & Back-End made with C# ,Sql.</p>
+            <p class="text-break"> I am person with passion in creating a developing new things. I love learnign of new
+                things. Coding is my hobby . I started in 2021 with C# courses on net, but i really quickly fell totally
+                into it. After few months with C# I started with course MVC .NET where I touched FrontEnd Framework
+                Agular, Javascript/Typescript. Today I am building small Apps for users with responsive Front-End &
+                Back-End made with C# ,Sql.</p>
+                <div class="mob">
+                    <button [routerLink]="['/skills']" class="btn btn-danger">Skills</button>
+                    <button [routerLink]="['/projects']" class="btn btn-danger mobile">Projects</button>
+                </div>
+            
         </div>
+        <div class="arrow red-text desktop"><i (mouseenter)="hoverSwitch()" (mouseleave)="hoverSwitch()"
+                (click)="move()" class="bi  fs-1" [class.bi-arrow-right-circle-fill]="hover"
+                [class.bi-arrow-right-circle]="!hover"></i></div>
         <div class="card pic-card"><img class="navbar-img" src="assets/me.jpg"></div>
     </div>
+    <div  *ngIf="switch"  style="width: 35rem;">
+        <div @arrowFade class="tome">
+            <div class="arrow red-text desktop">
+                <i (mouseenter)="hoverSwitch()" (mouseleave)="hoverSwitch()" (click)="move()" class="bi  fs-1"
+                    [class.bi-arrow-left-circle-fill]="!hover" [class.bi-arrow-left-circle]="hover"></i>
+            </div>
+        </div>
+        <div @slideProjects class="card card-sizing">
+        <img src={{project.img}} class="card-img-top pr-img " alt="...">
+        <div class="card-body">
+            <h5 class="card-title">{{project.name}}</h5>
+            <p class="card-text">{{project.summary}}</p>
+             <div>
+                <div class="mid">
+
+                    <i class="bi red fs-2" (click)="switchProject('previous')" (mouseenter)="hoverSwitchLeft()"
+                        (mouseleave)="hoverSwitchLeft()" [class.bi-caret-left]="!hoverOnLeft"
+                        [class.bi-caret-left-fill]="hoverOnLeft"></i>
+        
+                        <a href={{project.url}} class="btn btn-danger red-bg">Detail</a>
+        
+                    <i class="bi red fs-2" (click)="switchProject('next')" (mouseenter)="hoverSwitchRight()"
+                        (mouseleave)="hoverSwitchRight()" [class.bi-caret-right]="!hoverOnRight"
+                        [class.bi-caret-right-fill]="hoverOnRight"></i>
+        
+                </div>
+             </div>   
+            
+        </div>
+    </div>
+    </div>
+
 </div>

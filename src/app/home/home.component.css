@@ -4,7 +4,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 5px;
     text-align: center;
     height: 83vh;
     max-height: 100%;
@@ -19,6 +19,9 @@
 .back{
     background: rgb(255,246,211);
 background: linear-gradient(90deg, rgba(255,246,211,1) 2%, rgba(255,109,109,1) 100%);
+min-height: 100vh;
+      height: auto;
+    
 }
 button{
     margin-top: 50px;

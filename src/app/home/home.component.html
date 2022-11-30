@@ -1,6 +1,14 @@
-<div *ngIf="start" class="center back">
-    <h1 class="display-2 right-pad">Hey, Welcome...</h1>
-    <h1 class="display-2 left-pad">...to my Pfoolio</h1>
-    <button (click)="startTour()" class="btn btn-danger">Who am I?</button>
-    <small>check my <a href="https://github.com/Xokhezi">GitHub</a></small>
+<div class="back">
+    <div *ngIf="start" @mainDivUp class="center ">
+        <h1 @fadeMain class="display-2 right-pad">Hey, Welcome...</h1>
+        <h1 @fadeSecond class="display-2 left-pad">...to my Pfoolio</h1>
+        <button @appear (click)="startTour()" class="btn btn-danger">Who am I?</button>
+        <small @appear>check my <a href="https://github.com/Xokhezi">GitHub</a></small>
+    </div>
+<div @meDivUp *ngIf="tour">
+    <app-me  ></app-me>
+</div>
+    
+
+
 </div>

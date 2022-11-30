@@ -1,0 +1,10 @@
+<div class="center back">
+       <div *ngFor="let project of projects" class="card card-sizing" >
+            <img src={{project.img}} class="card-img-top pr-img " alt="...">
+            <div class="card-body">
+                <h5 class="card-title">{{project.name}}</h5>
+                <p class="card-text">{{project.summary}}</p>
+                <a href={{project.url}} class="btn btn-danger red-bg">Detail</a>
+            </div>
+        </div>
+   </div>

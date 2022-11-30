@@ -1,17 +1,19 @@
-<div class="cont">  
-  <h2 class="">Tomáš Němec</h2>  
-</div>
-<div class="try">
-  
-  <div class="container ">
-    <header class="d-flex justify-content-center py-3">
+<div class="container ">
+  <header class="d-flex flex-wrap justify-content-center py-3 mb-1 ">
+    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+      <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+      <span class="fs-4">Tomáš Němec</span>
+    </a>
       
-      
-      <ul class="nav nav-pills">
-        <li class="nav-item clr"><a [routerLink]="['']" class="nav-link active" aria-current="page">SkillZ</a></li>
-        <li class="nav-item"><a [routerLink]="['/projects']" class="nav-link">Projects</a></li>
-        <li class="nav-item"><a [routerLink]="['/me']" class="nav-link">Me&MYSELF&I</a></li>
-      </ul>
-    </header>  
-  </div>
+    
+
+    <ul class="nav nav-pills">
+      <li class="nav-item clr"><a [routerLink]="['']" class="nav-link active" aria-current="page">Home</a></li>
+      <li class="nav-item clr"><a [routerLink]="['/skills']" class="nav-link" aria-current="page">Skills</a></li>
+      <li class="nav-item"><a [routerLink]="['/projects']" class="nav-link">Projects</a></li>
+      <li class="nav-item"><a [routerLink]="['/me']" class="nav-link">AboutMe</a></li>
+    </ul>
+    <a  href="https://www.linkedin.com/in/tom%C3%A1%C5%A1-n%C4%9Bmec-2501ab1b7"><i class="bi bi-linkedin fs-4 m-2 mrg-li "></i></a>
+    <i class="bi bi-chat-left-dots-fill chat fs-4"  [routerLink]="['/contact']"></i>
+  </header>
 </div>
