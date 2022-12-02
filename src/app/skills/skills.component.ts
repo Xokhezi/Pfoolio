@@ -1,16 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import { fadeInFive, fadeInFour, fadeInOne, fadeInThree, fadeInTwo } from './skills.animation';
+import { stagerIn } from './skills.animation';
+
 
 @Component({
   selector: 'app-skills',
   templateUrl: './skills.component.html',
   styleUrls: ['./skills.component.css'],
   animations:[
-    fadeInOne,
-    fadeInTwo,
-    fadeInThree,
-    fadeInFour,
-    fadeInFive
+    stagerIn
   ]
 })
 export class SkillsComponent implements OnInit {
