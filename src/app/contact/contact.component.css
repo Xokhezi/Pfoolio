@@ -11,6 +11,9 @@
     padding-top: 10px;
 
 }
+.i-red{
+    color: #dc3545;      
+}
 .container{
     margin-top: 20px;
     gap: 20px;

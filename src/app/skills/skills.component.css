@@ -35,6 +35,10 @@
     
     
 }
+i{
+    color: #dc3545;
+      
+}
 .back {
     background: rgb(255, 246, 211);
     background: linear-gradient(90deg, rgba(255, 246, 211, 1) 2%, rgba(255, 109, 109, 1) 100%);
